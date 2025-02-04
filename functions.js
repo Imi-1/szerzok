@@ -34,3 +34,30 @@ function validateFormInputFieldsExtra(inputElement){
     return validation;  
    
 }
+
+
+function createHeader(){
+    const headerObj = {
+        cell1: "Szerző neve",
+        cell2: "Csapat",  
+        cell3: "Művei"    
+    };
+    
+    const tableID=document.getElementById("tableID")
+
+    const thead = document.createElement('thead');
+    tableID.appendChild(thead); 
+
+    const headerRow = document.createElement('tr');
+    thead.appendChild(headerRow);
+
+    for(const i in (headerObj)){ 
+        const headerCell = document.createElement('th'); 
+        headerCell.innerHTML = headerObj[i]; 
+        headerRow.appendChild(headerCell); 
+
+        if(i==="cell3"){
+            headerCell.colSpan = "2"
+        }
+    }
+}

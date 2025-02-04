@@ -32,7 +32,7 @@ const tbody = document.createElement('tbody');
 tbody.id="tbodyID";
 table.appendChild(tbody);
 
-// createHeader(); 
+createHeader(); 
 // renderTable(array);
 // generateForm();
 
