@@ -33,7 +33,7 @@ tbody.id="tbodyID";
 table.appendChild(tbody);
 
 createHeader(); 
-// renderTable(array);
+renderTable(array);
 // generateForm();
 
 
