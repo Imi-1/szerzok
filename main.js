@@ -34,7 +34,7 @@ table.appendChild(tbody);
 
 createHeader(); 
 renderTable(array);
-// generateForm();
+generateForm();
 
 
 const form = document.getElementById('form');
